@@ -1,0 +1,1 @@
+diskpart /s C:\Users\Public\Documents\办公大师5.17\Debug\disk2.txt

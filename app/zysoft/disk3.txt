@@ -1,0 +1,6 @@
+select vdisk file="V:\admin\WIN7_VHD.VHD"
+detach vdisk
+create partition primary
+assign letter=W
+format quick label=vhd
+exit

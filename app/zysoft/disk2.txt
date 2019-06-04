@@ -1,0 +1,3 @@
+select vdisk file="C:\Users\Public\Documents\zysoft.VHD"
+attach vdisk
+exit

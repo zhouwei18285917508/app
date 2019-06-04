@@ -1,0 +1,17 @@
+{
+  "name": "Business Networking Desktop",
+  "version": "2.0.9",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+  "electron",
+    "tab",
+    "tabs",
+    "webview"
+  ],
+  "author": "ZHOU WEI",
+  "license": "ISC"
+}

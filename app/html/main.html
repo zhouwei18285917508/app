@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>务联云桌面</title>
+    <link rel="icon" type="image/x-icon" href="../images/long.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/BrowserWindow.css">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="../js/jquery-2.0.3.min.js"></script>
+
+    <style>
+     #btn_list{
+        width: 60px;
+        display: inline-block;
+        float: left;
+        margin-left: 5px;
+    }
+    #btn_list ul {
+        height:40px;
+        width:60px;
+        list-style: none;
+        position: relative
+    }
+    #btn_list li {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        float: left;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body id="main">
+    <div id="ca_top_div" >
+        <div id="title_div" style="position: absolute;left: 0px;">
+            <button class="nav topItem_btn " style="width:60px;"  title="菜单"><img class="icon-home" src="../images/aniu.png"></button>
+           <div id='btn_list'> 
+                <ul >
+                    <li class="disktop-home" style=" top:3px;left:20px;transform: rotate(90deg);" title="桌面"><img  src="../images/z.png"></li>
+                    <li id='explorer' style=" top:10px;left:0px;"><img src="../images/z.png" title="文件管理"></li>
+                    <li id="editor" style=" bottom:3px;left:20px;transform: rotate(270deg);"title="编辑器"><img src="../images/z.png"></li>
+                    <li id='CDOWebsite' style=" top:10px;right:0px;transform: rotate(180deg);" title="官网"><img src="../images/z.png" alt=""></li>
+                </ul> 
+           </div>
+        </div>
+
+        <div id="frame_button" >
+            <button id="disktop" class="desk topItem_btn" style='display: none;' title=""><img src="../images/c.png" alt=""></button>
+            <button id="login" class="desk topItem_btn" ><img src="../images/log.png" alt="">
+                <div class="loglist">
+                   <ul>
+                        <li class="disktop-home" ><img src="../images/hom.png" alt=""><span class="users" title='home'>主页</span></li>
+                        <li class="personal"><img src="../images/user.png" alt=""><span class="users" title='个人中心'>个人中心</span></li>
+                        <li class="quit"><img src="../images/tc.png" alt=""><span title="退出">退出</span></li>
+                   </ul>
+                </div>
+            </button>
+            <div class="cd-nav-trigger example-1" id="headerBtn" >
+                <div class="menu-icon" ></div>
+            </div>
+            <a id="min_button" title="最小化" data-radium="true">
+                <img style="margin-top:-10px;" src="../images/xiaohua.png" alt="">
+            </a>
+            <a id="max_button" title="最大化" data-radium="true">
+                <img  id="Maximization" src="../images/dhua.png" alt="">
+            </a>
+            <a id="exit_button" title="关闭" data-radium="true">
+                <img src="../images/close-white.png" alt="">
+            </a>
+        </div>
+    </div>
+<div class="view" style="position: absolute;top:40px;height: calc(100% - 40px);width: 100%;">     
+<div class="s-side">     
+    <nav id="mysidebarmenu" class="amazonmenu">
+        <ul id="menuList">
+            <li class="navItem" title="系统"><img src="../images/xt.png" alt=""></li>
+            <li class="navItem" title="网站"><img src="../images/enclosure.png" alt=""></li>
+            <li class="navItem" title="工具"><img src="../images/favor.png" alt=""></li>
+            <li class="navItem" title="平台"><img src="../images/computers.png" alt=""></li>
+            <li class="navItem" title="其它"><img id="browser"  src="../images/link.png" alt=""></li>
+            <li class="navItem" title="自定义添加模块" style="position: absolute;bottom: 0px;padding: 12px 14px;"><img src="../images/app.png" alt=""></li>
+        </ul>
+    </nav>
+
+    <div class="navbox">
+        <ul class="navbox_list">
+            <h2>系统</h2>
+            <li><img src="../images/ycc.png" alt=""><a href="https://sc.cam2m.com">工业云</a></li>
+            <li><img src="../images/gyy.png" alt=""><a href="https://sv.cam2m.com/">硅谷云</a></li>
+            <li><img src="../images/yx.png" alt=""><a href="https://mail.casvip.com/">中亚邮箱</a></li>
+            <li><img src="../images/wlyzm.png" style="margin-top:10px;" alt=""><a href="http://demo.etclij.cn">务联云桌面</a></li>
+            <li><img src="../images/xyi.png" alt=""style="margin-top:10px;"><a href="http://cloud.szyetc.com:8557/">企业云平台</a></li>
+        </ul>
+   
+        <ul class="navbox_list">
+            <h2>官网</h2>
+            <li><img src="../images/jtgw.png" alt=""><a href="http://www.zhongyajituan.cn/">中亚集团</a></li>
+            <li><img src="../images/ggha.png"alt=""><a href="http://www.casvm.cn/">中亚交易网</a></li>
+            <li><img src="../images/crw.png"alt=""><a href="http://www.chinaasiaetc.com/">中亚硅谷海岸</a></li>
+            <li><img src="../images/ggyjz.png"alt=""><a href="http://www.cab2b.com/">产融网</a></li>
+            <li><img src="../images/huizhan.png"alt=""><a href="http://www.4008883333.com/">会展中心</a></li>
+            <li><img src="../images/zywl.png" alt=""><a href="http://www.chinaasianet.com">中亚网络</a></li>
+            <li><img src="../images/zmgw.png" alt=""><a href="http://www.cherryfruif.cn/index1.html">务联云桌面官网</a></li>
+        </ul>
+  
+        <ul class="navbox_list">
+            <h2>工具</h2>
+            <li><img src="../images/qyjz.png" alt=""><a href="http://zym2m.com/">硅谷云建站</a></li>
+            <li><img src="../images/sphy.png" alt=""><a href="http://server0.etclij.cn:90">视频会议</a></li>
+            <li><img src="../images/svzd.png" alt=""><a href="http://virt.etclij.cn">SV虚拟终端</a></li>
+            <li><img src="../images/ysc.png"  alt=""><a href="http://caecp.szyetc.com/wstmart/">中亚云市场</a></li>
+            <li><img src="../images/qj.png"   alt=""><a href="http://vr.etclij.cn/">全景云平台</a></li>
+        </ul>
+   
+        <ul class="navbox_list">
+            <h2>六大平台</h2>
+            <li><img src="../images/pt1.png" alt=""> <a href="http://www.chinaasianet.com/">产融网平台</a></li>
+            <li><img src="../images/jkjt.png" alt=""><a href="https://www.zhfinance.net/">中翰金控平台</a></li>
+            <li><img src="../images/ppt2.png" alt=""><a href="http://yjy.zym2m.com/">产融平台|研究院</a></li>
+            <li><img src="../images/zwpt.png" alt=""><a href="http://zywl.zym2m.com/">政务云平台</a></li>
+            <li><img src="../images/glpt.png" alt=""><a href="http://luyan.zym2m.com/">企业管理云平台</a></li>
+        </ul>
+   
+        <ul class="navbox_list">
+            <h2>其它</h2>
+            <li><img src="../images/zwbg.png" alt=""><a href="https://ppt1.etclij.cn/">中亚办公</a></li>
+            <li><img src="../images/wdzh.png" alt=""><a href="https://app.xunjiepdf.com/">迅捷文档转换</a></li>
+            <li><img src="../images/t1.png" alt=""><a href="http://naotu.baidu.com/">百度脑图</a></li>
+            <li><img src="../images/lct.png" alt=""><a href="http://app.liuchengtu.com/">迅捷流程图</a></li>
+            <li><img src="../images/zxwd.png" alt=""><a href="https://www.processon.com/">ProcessOn</a></li>
+            <li><img src="../images/icon-office.png" alt=""><a href="https://cn.office-converter.com/">OfficeConverter</a></li>
+            <li><img src="../images/wx.png" alt=""><a href="https://wx.qq.com/"> 微信</a></li>
+        </ul>
+
+        <ul class="navbox_list"></ul>
+    </div>
+</div>
+<div id="view" style="position: relative;height: 100%;width: 100%;"> <webview id="foo" src="http://s.etclij.cn" nodeintegration autosize></webview></div>
+</div>
+
+<section id="loading">
+    <div class="loader loader-2">
+        <svg class="loader-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <polygon points="29.8 0.3 22.8 21.8 0 21.8 18.5 35.2 11.5 56.7 29.8 43.4 48.2 56.7 41.2 35.1 59.6 21.8 36.8 21.8 " fill="#18ffff" />
+        </svg>
+        <div class="loader-circles"></div>
+    </div>
+</section>
+</body>
+
+ <script src="../js/main.js"></script>
+ <script>
+    $(".nav").click(function(){ 
+        let $navboxdisplay=$('.navbox').css('display');
+        let $sidedisplay= $('.s-side').css('display');
+       if($navboxdisplay=='none' && $sidedisplay=='none'){
+            $('.s-side').animate({width:'60px'},'fast').show(); 
+       }else{
+            $('.navbox').animate({width:'0px'},'fast').hide();
+            $('.s-side').animate({width:'0px'},'fast').hide();
+            $('#view').animate({left:'0px'},'fast');
+            $('#btn_list').animate({marginLeft:'0px'},'fast'); 
+       }
+
+    });
+
+    $('.navItem').click(function(){
+            let that=$(this).index();
+            if($('.navbox_list').eq(that).css('display') == 'block'){
+                $('.navbox_list').eq(that).hide();
+                $('.navbox').animate({width:'0px'},'fast'); 
+                $('#view').animate({left:'0px'},'fast');
+                $('#btn_list').animate({marginLeft:'0px'},'fast');  
+            }else{
+                $('.navbox').animate({width:'280px'},'fast').show();
+                $('.navbox_list').eq(that).show().siblings('.navbox_list').hide();
+                $('#view').animate({left:'340px'},'fast');
+                $('#btn_list').animate({marginLeft:'280px'},'fast'); 
+            }                  
+    });
+
+    $('a').click((event)=>{
+       event.preventDefault();
+    });
+
+    const {shell}=require('electron');
+    $('.navbox_list li').click(function(){
+        let $href=$(this).find('a').attr('href');
+        shell.openExternal($href);  
+    })
+ </script>
+</html>
